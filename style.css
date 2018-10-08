@@ -1,0 +1,136 @@
+/* -------- BASIC ----------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    overflow: auto;
+    box-sizing: border-box;
+    border-collapse: collapse;
+}
+
+body {
+    width: 100%;
+}
+
+/* -------- HEADER ----------- */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #ff5050;
+    box-shadow: 0px 3px 10px 0px #aaa;
+    height: 170px;
+}
+
+/* -------- HEADER LOGO ----------- */
+
+header h1 {
+    display: inline-block;
+    padding-right: 2%;
+    font-family: 'Oswald', sans-serif;
+    font-size: 4em;
+    color: #fff;
+    overflow: hidden;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+/* -------- HEADER NAVIGATION ----------- */
+
+nav a {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 13px;
+    width: 150px;
+    height: 40px;
+    background-color: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    text-decoration: none;
+    line-height: 38px;
+    text-align: center;
+    overflow: hidden;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+nav a:active {
+    background-color: #fff;
+    color: #ff5050; 
+}
+
+/* -------- MAIN CONTENT ----------- */
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+main img {
+    flex-grow: 1;
+    width: 15%;
+    height: 100%;
+    margin: 20px;
+    min-width: 150px;    
+}
+
+main img:hover {
+    opacity: 0.9;
+}
+
+
+/* -------- RESPONSIVITY ----------- */
+
+@media screen and (max-width: 700px) {
+    header {
+    align-items: center;
+    }
+    main img {
+        width: 42%;
+        flex-grow: 0;
+    }
+    header a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    main img {
+        width: 85%;
+        flex-grow: 0;
+    }
+    header a {
+        display: none;
+    }
+}
+
+/* -------- FOOTER ----------- */
+
+footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #ff5050;
+    margin-top: 30px;
+}
+
+footer h1{
+    margin-left: 20px;
+    font-size: 0.7em;
+}
+
